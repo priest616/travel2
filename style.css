@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  color: white;
+  font-family: sans-serif;
+  background-color: rgb(236, 236, 236);
+}
+
+.bigdot {
+  font-family: "Times New Roman", Times, serif;
+  color: green;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+  position: relative;
+  right: 10px;
+}
+
+header {
+  display: flex;
+  box-shadow: 0px 1px 10px -5px black;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(122, 122, 122, 0.192);
+}
+header div {
+  margin-right: auto;
+  padding: 10px;
+  display: flex;
+}
+header nav {
+  height: 40px;
+  align-self: center;
+}
+header nav ul {
+  display: flex;
+  background: 0 0% 100%/0.1;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+header nav ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobilelst[data-visible=false] {
+  transform: translateX(0%);
+}
+
+@media (max-width: 750px) {
+  header div h1 {
+    color: white;
+  }
+  header nav ul {
+    position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(20vh, 70px) 50px;
+    align-content: flex-start;
+    transform: translateX(100%);
+    transition: 350ms ease-out;
+    z-index: 111;
+  }
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    z-index: 666;
+    background: url(./free_icon.svg);
+    width: 40px;
+    border: transparent;
+    aspect-ratio: 1;
+    top: 10px;
+    right: 20px;
+  }
+  .mobile-nav[aria-expanded=true] {
+    background: url(./free_icon_1.svg);
+    height: 20px;
+    width: 30px;
+    border: transparent;
+  }
+}
+.fstsec {
+  height: max(100vh, 600px);
+  background: url("./pexels-wendy-wei-1540338 (1).jpg");
+  background-size: 100% 100%;
+}
+.fstsec div {
+  position: relative;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.fstsec div .div1 {
+  padding-top: 60px;
+}
+.fstsec div .div1 h4 {
+  text-align: center;
+  padding: 70px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  font-size: 0.95rem;
+  color: rgb(97, 97, 97);
+}
+.fstsec div .div2 {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.fstsec div .div2 h2 {
+  text-align: center;
+  align-self: center;
+  width: 60%;
+  font-weight: 200;
+  color: white;
+}
+.fstsec div .div3 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fstsec div .div3 button {
+  font-family: monospace;
+  text-align: center;
+  align-self: center;
+  width: 40%;
+  margin: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  height: 30px;
+  border-radius: 0;
+  border: 2px solid rgb(236, 236, 236);
+  background: transparent;
+  color: white;
+  font-weight: 10;
+  font-size: small;
+}
+.fstsec div .div3 button:hover {
+  transition: 400ms ease-in;
+  background-color: white;
+  color: #111111;
+}
+.fstsec div .div3 button:focus {
+  transition: 400ms ease-in;
+  background-color: white;
+  color: #111111;
+  border: transparent;
+}
+
+.fstsec-con {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.conclude {
+  position: relative;
+  height: 75px;
+  width: 3px;
+  background-color: green;
+  display: inline-block;
+  left: 80%;
+}
+
+.scndsec .scndsec-con {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.scndsec .scndsec-con .statclude {
+  position: relative;
+  height: 75px;
+  width: 3px;
+  background-color: white;
+  display: inline-block;
+  left: 80%;
+}
+.scndsec .scndsec-con .topcon p {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: smaller;
+  letter-spacing: 3px;
+  color: #111111;
+  padding: 20px;
+}
+.scndsec .scndsec-con .topcon h2 {
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding: 20px;
+}
+.scndsec .scndsec-con .topcon1 p {
+  width: min(50%, 200px);
+  margin: auto;
+  padding: 30px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #111111;
+}
+.scndsec .scndsec-con .topcon2 div {
+  padding: 10px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+}
+.scndsec .scndsec-con .topcon2 div h1 {
+  font-weight: 50;
+  letter-spacing: 3px;
+}
+.scndsec .scndsec-con .topcon2 div p {
+  width: min(50%, 200px);
+  margin: auto;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #111111;
+  text-transform: capitalize;
+}
+
+.numhr {
+  width: 60%;
+  background-color: rgb(97, 97, 97);
+  height: 2px;
+  border: 0;
+  border-radius: 2px;
+  margin: auto;
+}
+
+.thrdsec .thrdsec-con {
+  text-align: center;
+}
+.thrdsec .thrdsec-con .thrdsec-head {
+  padding-top: 40px;
+}
+.thrdsec .thrdsec-con .thrdsec-head p {
+  text-transform: uppercase;
+  font-weight: 50;
+  font-size: smaller;
+  letter-spacing: 3px;
+  color: green;
+  padding-top: 40px;
+}
+.thrdsec .thrdsec-con .thrdsec-head h2 {
+  margin: auto;
+  width: min(50%, 300px);
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #111111;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.thrdsec .thrdsec-con .cards {
+  margin-top: 30px;
+}
+.thrdsec .thrdsec-con .cards .card {
+  padding: 30px;
+}
+.thrdsec .thrdsec-con .cards .card div {
+  height: 30px;
+  width: 30px;
+  background-color: green;
+  margin: auto;
+}
+.thrdsec .thrdsec-con .cards .card p {
+  margin: auto;
+  font-weight: 50;
+  width: min(50%, 200px);
+  font-size: smaller;
+  letter-spacing: 1px;
+  color: rgb(97, 97, 97);
+}
+.thrdsec .thrdsec-con .cards .card h2 {
+  margin: auto;
+  width: min(50%, 300px);
+  font-weight: 520;
+  letter-spacing: 3px;
+  color: #111111;
+}
+
+.frthsec {
+  padding-bottom: 100px;
+  position: relative;
+}
+.frthsec .vails {
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  background: #111111;
+  z-index: -100;
+}
+.frthsec .frthsec-head {
+  text-align: center;
+}
+.frthsec .frthsec-head p {
+  text-transform: uppercase;
+  font-weight: 50;
+  font-size: smaller;
+  letter-spacing: 3px;
+  color: green;
+  padding-top: 100px;
+}
+.frthsec .frthsec-head h2 {
+  margin: auto;
+  width: min(60%, 400px);
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.frthsec .imggalla div {
+  height: 400px;
+  width: 300px;
+  margin: auto;
+}
+.frthsec .imggalla .backimg, .frthsec .imggalla .backimg2 {
+  background: url(./pexels-ron-lach-10495920.jpg);
+  background-size: 100% 100%;
+}
+.frthsec .imggalla .backimg1 {
+  background: url(./matthew-kerslake-BpH--upRlCs-unsplash.jpg);
+  background-size: 100% 100%;
+}
+.frthsec .imggalla .backimg3 {
+  background: url(./geran-de-klerk-N9s3FjzsstM-unsplash.jpg);
+  background-size: 100% 100%;
+}
+
+.foot {
+  background: url(./images\ \(5\).jpeg);
+}
+.foot .flag {
+  position: relative;
+}
+.foot .flag .the-flag {
+  position: absolute;
+  height: 100px;
+  width: 3px;
+  background: green;
+  left: 50%;
+  top: -50px;
+}
+.foot .content-con .head-con {
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.foot .content-con .head-con p {
+  text-transform: uppercase;
+  font-weight: 50;
+  font-size: smaller;
+  letter-spacing: 3px;
+  color: green;
+  padding-top: 100px;
+}
+.foot .content-con .head-con h2 {
+  margin: auto;
+  width: min(60%, 400px);
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.foot .form-con {
+  padding-top: 50px;
+  background: rgba(0, 0, 0, 0.45);
+}
+.foot .form-con form {
+  display: flex;
+  flex-direction: column;
+}
+.foot .form-con form input {
+  height: 40px;
+}
+.foot .form-con form input, .foot .form-con form textarea {
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-top: 60px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgb(97, 97, 97);
+  transition: 200ms ease-in;
+}
+.foot .form-con form input:focus, .foot .form-con form textarea:focus {
+  outline: none;
+  border-bottom: 1px solid green;
+  transition: 200ms ease-in;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.foot .form-con form button {
+  display: block;
+  width: 40%;
+  margin: auto;
+  margin-top: 60px;
+  background: green;
+  padding: 15px;
+  border: 0;
+  border-radius: 0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.notif {
+  background-color: black;
+  padding-bottom: 50px;
+}
+
+.notif-head {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.notif-head p {
+  font-weight: 200;
+  font-size: smaller;
+  letter-spacing: 3px;
+  color: rgb(97, 97, 97);
+  padding: 20px;
+}
+.notif-head h2 {
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding: 20px;
+  color: green;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+}
+footer p {
+  text-align: center;
+  align-self: center;
+  font-weight: 100;
+}
+
+.finds {
+  padding: 40px;
+  text-align: center;
+}
+.finds .find-i {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.finds .find-i div {
+  height: 20px;
+  width: 20px;
+  background-color: green;
+}
+.finds .find {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+}
+.finds .find p {
+  font-weight: 100;
+  font-size: smaller;
+  letter-spacing: 3px;
+  color: rgb(97, 97, 97);
+  padding: 20px;
+}
+.finds .find h4 {
+  text-transform: capitalize;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: green;
+}
+
+.p-special {
+  letter-spacing: 0 !important;
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    bottom: -60px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    bottom: -60px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
