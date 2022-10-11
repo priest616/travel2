@@ -54,7 +54,6 @@ header nav ul li {
   margin: 0;
   text-transform: capitalize;
   letter-spacing: 3px;
-  font-weight: 500;
 }
 
 .mobile-nav {
@@ -115,13 +114,13 @@ header nav ul li {
 .fstsec div .div1 h4 {
   text-align: center;
   padding: 70px;
-  font-weight: 100;
   letter-spacing: 3px;
   font-size: 0.95rem;
   color: rgb(97, 97, 97);
 }
 .fstsec div .div2 {
   height: 100px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
 }
@@ -129,8 +128,9 @@ header nav ul li {
   text-align: center;
   align-self: center;
   width: 60%;
-  font-weight: 200;
+  font-weight: 500;
   color: white;
+  letter-spacing: 2px;
 }
 .fstsec div .div3 {
   height: 200px;
@@ -142,16 +142,16 @@ header nav ul li {
   font-family: monospace;
   text-align: center;
   align-self: center;
-  width: 40%;
+  width: 70%;
   margin: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  height: 30px;
+  height: 50px;
   border-radius: 0;
   border: 2px solid rgb(236, 236, 236);
   background: transparent;
   color: white;
-  font-weight: 10;
+  font-weight: 100;
   font-size: small;
 }
 .fstsec div .div3 button:hover {
@@ -200,25 +200,29 @@ header nav ul li {
 }
 .scndsec .scndsec-con .topcon p {
   text-transform: uppercase;
-  font-weight: 100;
+  font-size: 1.75rem;
   font-size: smaller;
   letter-spacing: 3px;
   color: #111111;
-  padding: 20px;
 }
 .scndsec .scndsec-con .topcon h2 {
   text-transform: capitalize;
   font-weight: 400;
   letter-spacing: 3px;
   padding: 20px;
+  font-size: 2.5rem;
 }
 .scndsec .scndsec-con .topcon1 p {
-  width: min(50%, 200px);
+  width: min(80%, 600px);
   margin: auto;
   padding: 30px;
-  font-weight: 100;
+  font-size: 1.25rem;
   letter-spacing: 2px;
   color: #111111;
+  font-family: "Times New Roman", Times, serif;
+}
+.scndsec .scndsec-con .topcon2 {
+  padding-bottom: 70px;
 }
 .scndsec .scndsec-con .topcon2 div {
   padding: 10px;
@@ -227,13 +231,12 @@ header nav ul li {
   flex-direction: column;
 }
 .scndsec .scndsec-con .topcon2 div h1 {
-  font-weight: 50;
   letter-spacing: 3px;
+  font-size: 2.5rem;
 }
 .scndsec .scndsec-con .topcon2 div p {
   width: min(50%, 200px);
   margin: auto;
-  font-weight: 100;
   letter-spacing: 2px;
   color: #111111;
   text-transform: capitalize;
@@ -256,17 +259,17 @@ header nav ul li {
 }
 .thrdsec .thrdsec-con .thrdsec-head p {
   text-transform: uppercase;
-  font-weight: 50;
   font-size: smaller;
   letter-spacing: 3px;
   color: green;
+  font-size: 1.05rem;
   padding-top: 40px;
 }
 .thrdsec .thrdsec-con .thrdsec-head h2 {
   margin: auto;
-  width: min(50%, 300px);
+  width: min(80%, 700px);
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 3px;
   color: #111111;
   padding-top: 10px;
@@ -279,15 +282,14 @@ header nav ul li {
   padding: 30px;
 }
 .thrdsec .thrdsec-con .cards .card div {
-  height: 30px;
-  width: 30px;
+  height: 60px;
+  width: 60px;
   background-color: green;
   margin: auto;
 }
 .thrdsec .thrdsec-con .cards .card p {
   margin: auto;
-  font-weight: 50;
-  width: min(50%, 200px);
+  width: min(70%, 600px);
   font-size: smaller;
   letter-spacing: 1px;
   color: rgb(97, 97, 97);
@@ -295,7 +297,7 @@ header nav ul li {
 .thrdsec .thrdsec-con .cards .card h2 {
   margin: auto;
   width: min(50%, 300px);
-  font-weight: 520;
+  font-weight: 400;
   letter-spacing: 3px;
   color: #111111;
 }
@@ -306,25 +308,25 @@ header nav ul li {
 }
 .frthsec .vails {
   position: absolute;
-  height: 400px;
+  height: max(90vh, 600px);
   width: 100%;
   background: #111111;
   z-index: -100;
 }
 .frthsec .frthsec-head {
   text-align: center;
+  padding-bottom: 40px;
 }
 .frthsec .frthsec-head p {
   text-transform: uppercase;
-  font-weight: 50;
   font-size: smaller;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: green;
   padding-top: 100px;
 }
 .frthsec .frthsec-head h2 {
   margin: auto;
-  width: min(60%, 400px);
+  width: min(70%, 600px);
   text-transform: capitalize;
   font-weight: 400;
   letter-spacing: 3px;
@@ -367,12 +369,10 @@ header nav ul li {
 .foot .content-con .head-con {
   text-align: center;
   padding-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 .foot .content-con .head-con p {
   text-transform: uppercase;
-  font-weight: 50;
-  font-size: smaller;
   letter-spacing: 3px;
   color: green;
   padding-top: 100px;
@@ -380,7 +380,6 @@ header nav ul li {
 .foot .content-con .head-con h2 {
   margin: auto;
   width: min(60%, 400px);
-  font-weight: 400;
   letter-spacing: 3px;
   color: white;
   padding-top: 10px;
@@ -395,11 +394,11 @@ header nav ul li {
   flex-direction: column;
 }
 .foot .form-con form input {
-  height: 40px;
+  height: 50px;
 }
 .foot .form-con form input, .foot .form-con form textarea {
   display: block;
-  width: 50%;
+  width: 70%;
   margin: auto;
   margin-top: 60px;
   background: transparent;
@@ -426,7 +425,6 @@ header nav ul li {
   border-radius: 0;
   color: white;
   text-transform: uppercase;
-  font-weight: 100;
   letter-spacing: 2px;
 }
 
@@ -441,15 +439,12 @@ header nav ul li {
   margin: auto;
 }
 .notif-head p {
-  font-weight: 200;
-  font-size: smaller;
   letter-spacing: 3px;
   color: rgb(97, 97, 97);
   padding: 20px;
 }
 .notif-head h2 {
   text-transform: capitalize;
-  font-weight: 400;
   letter-spacing: 3px;
   padding: 20px;
   color: green;
@@ -477,33 +472,66 @@ footer p {
   width: 60%;
   justify-content: space-evenly;
   margin: auto;
+  gap: 2px;
 }
 .finds .find-i div {
-  height: 20px;
-  width: 20px;
+  height: 50px;
+  width: 50px;
   background-color: green;
 }
 .finds .find {
-  width: 60%;
+  width: 70%;
   margin: auto;
   padding: 20px;
 }
 .finds .find p {
-  font-weight: 100;
-  font-size: smaller;
   letter-spacing: 3px;
   color: rgb(97, 97, 97);
   padding: 20px;
 }
 .finds .find h4 {
   text-transform: capitalize;
-  font-weight: 100;
   letter-spacing: 2px;
   color: green;
 }
 
 .p-special {
   letter-spacing: 0 !important;
+}
+
+.owners-pam {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owners-pam .owners-pam-con {
+  width: 200px;
+  height: 250px;
+  white-space: nowrap;
+  overflow: auto;
+  overflow-y: hidden;
+}
+.owners-pam .owners-pam-con .owners-frem {
+  display: inline-block;
+  width: 250px;
+  height: 250x;
+}
+.owners-pam .owners-pam-con .owners-frem .owne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 250px;
+}
+.owners-pam .owners-pam-con .owners-frem .owne img {
+  width: 120px;
+  height: 120px;
+  border-radius: 25%;
+}
+.owners-pam .owners-pam-con .owners-frem .owne p span {
+  color: green;
 }
 
 @-webkit-keyframes slidein {
