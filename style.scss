@@ -114,7 +114,7 @@ header{
             padding: 70px;
             // font-weight: 100;
             letter-spacing: 3px;
-            font-size: 0.95rem;
+            font-size: 1.1rem;
             color: rgb(97, 97, 97);
         }
     }
@@ -130,6 +130,7 @@ header{
             font-weight: 500;
             color: white;
             letter-spacing: 2px;
+            font-size: 1.65rem;
         }
     }
     .div3{
@@ -206,13 +207,14 @@ header{
                 font-size: smaller;
                 letter-spacing: 3px;
                 color: $textsecondarycolour;
+                font-size: 1.25rem;
             }
             h2{
                 text-transform: capitalize;
                 font-weight: 400;
                 letter-spacing: 3px;
                 padding: 20px;
-                font-size: 2.5rem;
+                font-size: 3.5rem;
             }
         }
         .topcon1{
@@ -230,16 +232,16 @@ header{
             padding-bottom: 70px;
             div{
                 padding: 10px;
-                height: 70px;
+                height: 120px;
                 display: flex;
                 flex-direction: column;
                 h1{
                     letter-spacing: 3px;
-                    font-size: 2.5rem;
+                    font-size: 4.5rem;
                 }
                 p{
                     width: min(50%, 200px);
-                    
+                    font-size: 1.1rem;
                     margin: auto;
                     letter-spacing: 2px;
                     color: $textsecondarycolour;
@@ -269,7 +271,7 @@ header{
                 font-size: smaller;
                 letter-spacing: 3px;
                 color: $maincolour;
-                font-size: 1.05rem;
+                font-size: 1.1rem;
                 padding-top: 40px;
             }
             h2{
@@ -281,6 +283,7 @@ header{
                 color: $textsecondarycolour;
                 padding-top: 10px;
                 padding-bottom: 10px;
+                font-size: 1.65rem;
             }
         }
         .cards{
@@ -299,6 +302,7 @@ header{
                     font-size: smaller;
                     letter-spacing: 1px;
                     color: rgb(97, 97, 97);
+                    font-size: 1.1rem;
                 }
                 h2{
                     margin: auto;
@@ -332,6 +336,7 @@ header{
             letter-spacing: 2px;
             color: $maincolour;
             padding-top: 100px;
+            font-size: 1.1rem;
         }
         h2{
             margin: auto;
@@ -342,6 +347,7 @@ header{
             color: $textprimarycolour;
             padding-top: 10px;
             padding-bottom: 10px;
+            font-size: 1.65rem;
         }
     }
     .imggalla{
@@ -388,15 +394,16 @@ header{
                 letter-spacing: 3px;
                 color: $maincolour;
                 padding-top: 100px;
+                font-size: 1.1rem;
             }
             h2{
                 margin: auto;
                 width: min(60%, 400px);
-                // font-weight: 400;
                 letter-spacing: 3px;
                 color: $textprimarycolour;
                 padding-top: 10px;
-                padding-bottom: 10px;
+                font-size: 1.65rem;
+                padding-bottom: 50px;
             }
     
         }
@@ -458,12 +465,14 @@ header{
         letter-spacing: 3px;
         color: rgb(97, 97, 97);
         padding: 20px;
+        font-size: 1.1rem;
     }
     h2{
         text-transform: capitalize;
         // font-weight: 400;
         letter-spacing: 3px;
         padding: 20px;
+        font-size: 1.65rem;
         color: $maincolour;
     }
 
@@ -505,12 +514,14 @@ footer{
             letter-spacing: 3px;
             color: rgb(97, 97, 97);
             padding: 20px;
+            font-size: 1.1rem;
         }
         h4{
             text-transform: capitalize;
             // font-weight: 100;
             letter-spacing: 2px;
             color: $maincolour;
+            font-size: 1.65rem;
         }
     }
 }

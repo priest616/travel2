@@ -116,7 +116,7 @@ header nav ul li {
   text-align: center;
   padding: 70px;
   letter-spacing: 3px;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: rgb(97, 97, 97);
 }
 .fstsec div .div2 {
@@ -132,6 +132,7 @@ header nav ul li {
   font-weight: 500;
   color: white;
   letter-spacing: 2px;
+  font-size: 1.65rem;
 }
 .fstsec div .div3 {
   height: 200px;
@@ -205,13 +206,14 @@ header nav ul li {
   font-size: smaller;
   letter-spacing: 3px;
   color: #111111;
+  font-size: 1.25rem;
 }
 .scndsec .scndsec-con .topcon h2 {
   text-transform: capitalize;
   font-weight: 400;
   letter-spacing: 3px;
   padding: 20px;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 .scndsec .scndsec-con .topcon1 p {
   width: min(80%, 600px);
@@ -227,16 +229,17 @@ header nav ul li {
 }
 .scndsec .scndsec-con .topcon2 div {
   padding: 10px;
-  height: 70px;
+  height: 120px;
   display: flex;
   flex-direction: column;
 }
 .scndsec .scndsec-con .topcon2 div h1 {
   letter-spacing: 3px;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
 }
 .scndsec .scndsec-con .topcon2 div p {
   width: min(50%, 200px);
+  font-size: 1.1rem;
   margin: auto;
   letter-spacing: 2px;
   color: #111111;
@@ -263,7 +266,7 @@ header nav ul li {
   font-size: smaller;
   letter-spacing: 3px;
   color: green;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   padding-top: 40px;
 }
 .thrdsec .thrdsec-con .thrdsec-head h2 {
@@ -275,6 +278,7 @@ header nav ul li {
   color: #111111;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 1.65rem;
 }
 .thrdsec .thrdsec-con .cards {
   margin-top: 30px;
@@ -294,6 +298,7 @@ header nav ul li {
   font-size: smaller;
   letter-spacing: 1px;
   color: rgb(97, 97, 97);
+  font-size: 1.1rem;
 }
 .thrdsec .thrdsec-con .cards .card h2 {
   margin: auto;
@@ -324,6 +329,7 @@ header nav ul li {
   letter-spacing: 2px;
   color: green;
   padding-top: 100px;
+  font-size: 1.1rem;
 }
 .frthsec .frthsec-head h2 {
   margin: auto;
@@ -334,6 +340,7 @@ header nav ul li {
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 1.65rem;
 }
 .frthsec .imggalla div {
   height: 400px;
@@ -377,6 +384,7 @@ header nav ul li {
   letter-spacing: 3px;
   color: green;
   padding-top: 100px;
+  font-size: 1.1rem;
 }
 .foot .content-con .head-con h2 {
   margin: auto;
@@ -384,7 +392,8 @@ header nav ul li {
   letter-spacing: 3px;
   color: white;
   padding-top: 10px;
-  padding-bottom: 10px;
+  font-size: 1.65rem;
+  padding-bottom: 50px;
 }
 .foot .form-con {
   padding-top: 50px;
@@ -443,11 +452,13 @@ header nav ul li {
   letter-spacing: 3px;
   color: rgb(97, 97, 97);
   padding: 20px;
+  font-size: 1.1rem;
 }
 .notif-head h2 {
   text-transform: capitalize;
   letter-spacing: 3px;
   padding: 20px;
+  font-size: 1.65rem;
   color: green;
 }
 
@@ -489,11 +500,13 @@ footer p {
   letter-spacing: 3px;
   color: rgb(97, 97, 97);
   padding: 20px;
+  font-size: 1.1rem;
 }
 .finds .find h4 {
   text-transform: capitalize;
   letter-spacing: 2px;
   color: green;
+  font-size: 1.65rem;
 }
 
 .p-special {

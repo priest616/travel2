@@ -273,7 +273,7 @@ observerdig3.observe(starthappy);
 
 const loader = document.getElementById('preloader');
 
-window.addEventListener("load", function() {
-    loader.style.display = 'none';
-    document.body.classList.remove('no-scroll');
-})
+window.onload = function() {
+  loader.style.display = 'none';
+  document.body.classList.remove('no-scroll');
+};
