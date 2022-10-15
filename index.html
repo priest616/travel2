@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="loader.css">
 </head>
 
-<body>
-    <header>
+<body class="no-scroll">
+    <div class="loader-con" id="preloader">
+        <div class="loader">
+            <span></span>
+        </div>
+    </div>
+    <header class="main-item" aria-inview="true">
         <div>
             <h1>
                 Apex
@@ -70,8 +76,8 @@
             </div>
             <div class="topcon2">
                 <div>
-                    <h1>
-                        100
+                    <h1 id="destinations">
+                        0
                     </h1>
                     <p>
                         destinations
@@ -79,8 +85,8 @@
                     <hr class="numhr">
                 </div>
                 <div>
-                    <h1>
-                        100
+                    <h1 id="completed-trips">
+                        0
                     </h1>
                     <p>
                         completed trips
@@ -88,8 +94,8 @@
                     <hr class="numhr">
                 </div>
                 <div>
-                    <h1>
-                        150
+                    <h1 id="organised-events">
+                        0
                     </h1>
                     <p>
                         organised events
@@ -97,8 +103,8 @@
                     <hr class="numhr">
                 </div>
                 <div>
-                    <h1>
-                        102
+                    <h1 id="happy-clients">
+                        0
                     </h1>
                     <p>
                         happy clients
@@ -119,24 +125,24 @@
                 <hr class="numhr">
             </div>
             <div class="cards">
-                <div class="card">
+                <div class="card card1">
                     <div></div>
                     <h2>Travel</h2>
                     <p>Explore over 50 destinations in and around Nairobi. Travel in comfort to destination of your
                         choice.</p>
                 </div>
-                <div class="card">
+                <div class="card card2">
                     <div></div>
                     <h2>Benefits</h2>
                     <p>World class comfort with ready refreshment. With care from best staff</p>
                 </div>
-                <div class="card">
+                <div class="card card3">
                     <div></div>
                     <h2>Destinations</h2>
                     <p>Enjoy numerous destinations and serine event sites. enjoy wild life of Kenyan park and bliss of
                         sea shows in the coast.</p>
                 </div>
-                <div class="card">
+                <div class="card card4">
                     <div></div>
                     <h2>About Us</h2>
                     <p>We organize events with state of the art equipment best music system and exquisite delicacies</p>
@@ -226,28 +232,28 @@
                                     <br>
                                     CEO, Apex
                                 </p>
-    
+
                             </div>
                         </div>
                         <div class="owners-frem">
                             <div class="owne">
-                            <img src="./matthew-kerslake-BpH--upRlCs-unsplash.jpg" alt="">
-                            <p>
-                                <span>Dave</span> 
-                                <br>
-                                CFO, Apex
-                            </p>
-                        </div>
+                                <img src="./matthew-kerslake-BpH--upRlCs-unsplash.jpg" alt="">
+                                <p>
+                                    <span>Dave</span>
+                                    <br>
+                                    CFO, Apex
+                                </p>
+                            </div>
                         </div>
                         <div class="owners-frem">
                             <div class="owne">
-                            <img src="./matthew-kerslake-BpH--upRlCs-unsplash.jpg" alt="">
-                            <p>
-                                <span>Jerry Prestley</span>
-                                <br>
-                                COO, Apex
-                            </p>
-                        </div>
+                                <img src="./matthew-kerslake-BpH--upRlCs-unsplash.jpg" alt="">
+                                <p>
+                                    <span>Jerry Prestley</span>
+                                    <br>
+                                    COO, Apex
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,7 +264,8 @@
                         Get Notified
                     </h2>
                     <p>
-                        Get the latest news and updates from us. Get information  of the latest Tours event rates and stay in the loop!
+                        Get the latest news and updates from us. Get information of the latest Tours event rates and
+                        stay in the loop!
                     </p>
                 </div>
                 <form action="#">

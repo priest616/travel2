@@ -38,7 +38,8 @@ header{
         ul{
             display: flex;
             background: 0 0% 100% /0.1;
-                backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.575);
             li{
                 list-style: none;
                 padding: 10px;
@@ -551,6 +552,23 @@ footer{
         }
     }
 }
+.slideinclass {
+    width: 100%;
+    animation: dropin;
+    animation-duration: 1.2s;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    z-index: 999;
+}
+.slideinsideclass{
+    animation: slideside;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+.card{
+    opacity: 0;
+}
 @keyframes slidein {
     0%{
         bottom: -60px;
@@ -560,4 +578,27 @@ footer{
         bottom: 0px;
         opacity: 1;
     }
+}
+@keyframes dropin {
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes slideside {
+    0%{
+        transform: translateX(-50%);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.no-scroll{
+    overflow: hidden;
 }

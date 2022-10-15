@@ -47,6 +47,7 @@ header nav ul {
   background: 0 0% 100%/0.1;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.575);
 }
 header nav ul li {
   list-style: none;
@@ -533,6 +534,31 @@ footer p {
   color: green;
 }
 
+.slideinclass {
+  width: 100%;
+  -webkit-animation: dropin;
+          animation: dropin;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  z-index: 999;
+}
+
+.slideinsideclass {
+  -webkit-animation: slideside;
+          animation: slideside;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.card {
+  opacity: 0;
+}
+
 @-webkit-keyframes slidein {
   0% {
     bottom: -60px;
@@ -553,4 +579,47 @@ footer p {
     bottom: 0px;
     opacity: 1;
   }
+}
+@-webkit-keyframes dropin {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes dropin {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideside {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slideside {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.no-scroll {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
