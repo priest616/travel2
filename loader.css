@@ -1,6 +1,6 @@
 :root {
     --color-primary: green;
-    --color-secondary: rgb(212, 212, 212);
+    --color-secondary: rgb(255, 255, 255);
     --loader-size: 40vh;
     --loader-border-percentage: 0.2;
   }

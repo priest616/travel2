@@ -25,8 +25,9 @@ header{
     box-shadow: 0px 1px 10px -5px black;
     width: 100%;
     position: absolute;
+    align-items: center;
     background-color: rgba(122, 122, 122, 0.192);
-
+    height: 80px;
     div{
         margin-right: auto;
         padding: 10px;
@@ -88,7 +89,7 @@ header{
         width: 40px;
         border: transparent;
         aspect-ratio: 1;
-        top: 10px;
+        top: 30px;
         right: 20px;
     }
     .mobile-nav[aria-expanded="true"]{
@@ -98,17 +99,22 @@ header{
         border: transparent;
     }
 }
-
+.fstsec-con{
+    opacity: 0;
+}
+.instyle{
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
 .fstsec{
     height: max(100vh, 600px);
     background: url('./pexels-wendy-wei-1540338\ \(1\).jpg');
     background-size: 100% 100%;
     div{
         position: relative;
-        animation-name: slidein;
-        animation-duration: 2s;
     .div1{
-        padding-top: 60px;
+        padding-top: 80px;
         h4{
             text-align: center;
             padding: 70px;
@@ -171,7 +177,6 @@ header{
 }
 .fstsec-con{
     overflow: hidden;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -569,7 +574,7 @@ footer{
     animation-duration: 1.2s;
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(0, 68, 0, 0.8) !important;
     z-index: 999;
 }
 .slideinsideclass{
@@ -577,16 +582,22 @@ footer{
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
 }
+.cards{
+    padding-bottom: 50px;
+}
 .card{
     opacity: 0;
 }
 @keyframes slidein {
     0%{
-        bottom: -60px;
+        transform: translateY(50%);
         opacity: 0;
     }
+    80%{
+        opacity: 0.4;
+    }
     100%{
-        bottom: 0px;
+        transform: translateY(0%);
         opacity: 1;
     }
 }
