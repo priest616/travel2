@@ -100,6 +100,7 @@ header{
     }
 }
 .fstsec-con{
+    height: 100%;
     opacity: 0;
 }
 .instyle{
@@ -108,7 +109,7 @@ header{
     animation-fill-mode: forwards;
 }
 .fstsec{
-    height: max(100vh, 600px);
+    height: max(100vh, 650px);
     background: url('./pexels-wendy-wei-1540338\ \(1\).jpg');
     background-size: 100% 100%;
     div{

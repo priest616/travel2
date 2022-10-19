@@ -271,12 +271,3 @@ const observerdig3 = new IntersectionObserver(function (entries, observer) {
 
 observerdig3.observe(starthappy);
 
-const loader = document.getElementById('preloader');
-
-window.onload = function() {
-  loader.style.display = 'none';
-  document.body.classList.remove('no-scroll');
-  setTimeout(() => {
-    document.getElementById('fstsec-con').classList.add('instyle')
-  }, 300);
-};
