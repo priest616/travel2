@@ -18,7 +18,7 @@ const seconemain = document.querySelector('.main-item');
 option = {
     root: null,
     threshold: 0, //how much of it is visible
-    rootMargin: "-200px" //sets mergin
+    rootMargin: "0px" //sets mergin
 };
 
 const observer = new IntersectionObserver(function (entries, observer) {

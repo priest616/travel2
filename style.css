@@ -489,6 +489,7 @@ footer p {
 .finds {
   padding: 40px;
   text-align: center;
+  position: relative;
 }
 .finds .find-i {
   display: flex;
@@ -656,4 +657,10 @@ footer p {
 }
 .no-scroll {
   overflow: hidden;
+}
+
+@media (max-width: 400px) {
+  .herego {
+    font-size: 1.3rem !important;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -498,6 +498,7 @@ footer{
 .finds{
     padding: 40px;
     text-align: center;
+    position: relative;
     .find-i{
         display: flex;
         width: 60%;
@@ -569,6 +570,7 @@ footer{
         }
     }
 }
+
 .slideinclass {
     width: 100%;
     animation: dropin;
@@ -624,4 +626,9 @@ footer{
 }
 .no-scroll{
     overflow: hidden;
+}
+@media (max-width: 400px){
+    .herego{
+        font-size: 1.3rem !important;
+    }
 }
