@@ -5,7 +5,6 @@
     padding: 0;
 }
 body{
-    overflow-x: hidden ;
     color: $textprimarycolour;
     font-family: sans-serif;
     background-color: $mainbackground;
@@ -39,8 +38,8 @@ header{
         ul{
             display: flex;
             background: 0 0% 100% /0.1;
-            backdrop-filter: blur(10px);
-            background-color: rgba(0, 0, 0, 0.575);
+            // backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0);
             li{
                 list-style: none;
                 padding: 10px;
@@ -60,7 +59,7 @@ header{
     transform: translateX(0%);
 }
 
-@media (max-width: 750px){
+@media (max-width: 950px){
     header{
         div{
             h1{
@@ -297,10 +296,10 @@ header{
             .card{
                 padding: 30px;
                 div{
-                    height: 60px;
-                    width: 60px;
-                    background-color: $maincolour;
+                    height: 50px;
+                    width: 50px;
                     margin: auto;
+                    padding: 10px;
                 }
                 p{
                     margin: auto;
@@ -356,24 +355,68 @@ header{
             font-size: 1.65rem;
         }
     }
+    .extra{
+        color: $textsecondarycolour;
+        padding: 30px;
+        width: 150px;
+        margin-left: auto;
+        font-style: italic;
+        border-bottom: 1px solid $maincolour;
+        a{
+            text-decoration: none;
+            color: $maincolour;
+        }
+    }
     .imggalla{
-        div{
-            height: 400px;
-            width: 300px;
-            margin: auto;
+        .imgcon{
+            width: 60%;
+            transition: 200px ease-in;
+            position: relative;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                overflow: hidden;
+            }
+            .imgcon-disc{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                color: $textsecondarycolour;
+                position: absolute;
+                height: 100%;
+                bottom: 0;
+                width: 100%;
+                background: linear-gradient( rgba(0, 0, 0, 0), black);
+                h4{
+                    padding: 0 0 0 20px;
+                    color: rgb(177, 177, 177);
+                }
+                p{
+                    font-style: italic;
+                    color: $maincolour;
+                    padding: 0 0 10px 20px;
+                }
+            }
+
         }
-        .backimg, .backimg2{
-            background: url(./pexels-ron-lach-10495920.jpg);
-            background-size: 100% 100%;
-        }
-        .backimg1{
-            background: url(./matthew-kerslake-BpH--upRlCs-unsplash.jpg);
-            background-size: 100% 100%;
-        }
-        .backimg3{
-            background: url(./geran-de-klerk-N9s3FjzsstM-unsplash.jpg);
-            background-size: 100% 100%;
-        }
+    }
+}
+.img-re-con{
+    opacity: 0;
+    position: absolute;
+    display: inline;
+    height: 25px;
+    width: 25px;
+    background-color: $textsecondarycolour;
+    border: none;
+    right: 0;
+    
+    .img-re{
+        background: url(./free_icon.svg);
+        height: 25px;
+        width: 25px;
+        border: none;
+    
     }
 }
 .foot{
@@ -422,6 +465,7 @@ header{
             flex-direction: column;
             input{
                 height: 50px;
+                color: $textprimarycolour;
             }
             input, textarea{
                 display: block;
@@ -489,6 +533,7 @@ footer{
     background-color: black;
     color: $textprimarycolour;
     justify-content: center;
+    border-top: 2px solid $maincolour;
     p{
         text-align: center;
         align-self: center;
@@ -504,11 +549,10 @@ footer{
         width: 60%;
         justify-content: space-evenly;
         margin: auto;
-        gap: 2px;
+        gap: 5px;
         div{
-            height: 50px;
-            width: 50px;
-            background-color: $maincolour;
+            height: 25px;
+            width: 25px;
         }
     }
     .find{
@@ -545,9 +589,13 @@ footer{
         width: 200px;
         height: 250px;
         white-space: nowrap;
-        overflow: auto;
-        overflow-y: hidden;
-        .owners-frem{
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }        
+.owners-frem{
             display: inline-block;
             width: 130px;
             .owne{
@@ -591,6 +639,7 @@ footer{
 .card{
     opacity: 0;
 }
+
 @keyframes slidein {
     0%{
         transform: translateY(50%);
@@ -631,4 +680,126 @@ footer{
     .herego{
         font-size: 1.3rem !important;
     }
+}
+.navcomm{
+    padding: 0;
+    flex-direction: column;
+    margin-top: auto;
+    .findus{
+        gap: 15px;
+        margin: 0 auto;
+        div{
+            height: 10px;
+            width: 10px;
+            background-size: 100% 100%;
+        }
+    }
+
+}
+.navcomment{
+    p{
+        text-align: justify;
+        color: $textsecondarycolour;
+        span{
+            color: rgb(0, 73, 0);
+            text-transform: capitalize;
+        }
+    }
+}
+#whatsapp{
+    background: url(./icons/whatsapp.png);
+    background-size: 100% 100%;
+}
+#instagram{
+    background: url(./icons/instagram.png);
+    background-size: 100% 100%;
+}
+#tiktok{
+    background: url(./icons/tik-tok.png);
+    background-size: 100% 100%;
+}
+#twitter{
+    background: url(./icons/twitter.png);
+    background-size: 100% 100%;
+}#travel{
+    background: url(./icons/travel-luggage.png);
+    background-size: 100% 100%;
+}
+#benefits{
+    background: url(./icons/incentive.png);
+    background-size: 100% 100%;
+}
+#destination{
+    background: url(./icons/destination.png);
+    background-size: 100% 100%;
+}
+#about{
+    background: url(./icons/about.png);
+    background-size: 100% 100%;
+}
+.hide{
+    opacity: 0;
+}
+
+
+
+
+.pasttripgalla{
+    height: min(100vh);
+    background: rgba(0, 0, 0, 0.1);
+    padding-top: 90px;
+}
+.hesd-ev{
+    width: 100%;
+    height: 60px;
+    background: $textsecondarycolour;
+    color: $maincolour;
+    display: flex;
+    align-items: center;
+    h3{
+        text-transform: capitalize;
+        padding-left: 30px;
+    }
+}
+.trip-con{
+    display: flex;
+    width: 92%;
+    padding: 4%;
+}
+.tripimg{
+    width: max(150px, 20%);
+    height: 100%;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.gallahr{
+    width: 90%;
+    margin: 0 auto;
+}
+.trip-con-disc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.trip-con-disc-btm{
+    padding: 20px 0 0 40px;
+    color: $textsecondarycolour;
+    h3{
+        padding-bottom: 15px;
+    }
+    h2{
+        font-style: italic;
+        color: $maincolour
+    }
+
+}
+.trip-con-disc-top{
+    padding: 20px 0 0 40px;
+    color: $textsecondarycolour;
+    h1{
+        padding-bottom: 25px;
+    }
+
 }

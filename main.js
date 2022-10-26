@@ -6,9 +6,11 @@ navBtn.addEventListener('click', () => {
     if (visibility == 'false') {
         nalst.setAttribute('data-visible', true);
         navBtn.setAttribute('aria-expanded', true);
+        document.body.classList.remove('no-scroll');
     } else {
         nalst.setAttribute('data-visible', false);
         navBtn.setAttribute('aria-expanded', false);
+        document.body.classList.add('no-scroll');
     }
 })
 
@@ -271,3 +273,47 @@ const observerdig3 = new IntersectionObserver(function (entries, observer) {
 
 observerdig3.observe(starthappy);
 
+const openInsta = document.querySelectorAll('#instagram');
+
+for (let i = 0; i < openInsta.length; i++) {
+  const element = openInsta[i];
+  element.addEventListener("click", function () {
+    console.log('here')
+    open('https://instagram.com/apextoursandevents?igshid=YmMyMTA2M2Y=', '_blank')
+  })
+  
+}
+
+const copyphone = document.querySelectorAll('#whatsapp');
+
+for (let i = 0; i < copyphone.length; i++) {
+  const element = copyphone[i];
+  element.addEventListener("click", function () {
+    console.log('here');
+    navigator.clipboard.writeText('072429788');
+    alert("contact copied: 072429788");
+  })
+  
+}
+
+const allimg = document.querySelectorAll('#viewimg');
+
+for (let i = 0; i < allimg.length; i++) {
+  const element = allimg[i];
+  element.addEventListener("click", function () {
+
+    if (element.classList.contains("hide")) {
+      element.parentElement.style.width = '60%';
+      element.classList.remove('hide');  
+      return;
+    }
+
+    element.parentElement.style.width = '100%';
+    element.classList.add('hide');
+
+  } )
+}
+
+document.getElementById('togalla').addEventListener('click', function () {
+  open('./gallery.html', '_parent')
+})

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="loader.css">
+</head>
+
+<body class="no-scroll" id="no-scroll">
+    <div class="loader-con" id="preloader">
+        <div class="loader">
+            <span></span>
+        </div>
+    </div>
+    <header class="main-item" aria-inview="true">
+        <div>
+            <h1>
+                Apex
+                <span class="bigdot">
+                    .
+                </span>
+            </h1>
+            <div class="bigdot"></div>
+        </div>
+        <button class="mobile-nav" aria-expanded="true">
+        </button>
+        <nav>
+            <ul class="mobilelst" data-visible='true'>
+                <li>home</li>
+                <li>about</li>
+                <li>gallery</li>
+                <li>contact</li>
+                <div class="navcomm">
+                    <div class="navcomment">
+                        <p>
+                            Reach out and connect with us. Leave your comfort zone and go on an <span>adventure</span>
+                            with us see the best kenya has to offer!!!
+                        </p>
+                    </div>
+                    <div class="findus">
+                        <div class="icon1" id="whatsapp"></div>
+                        <div class="icon2" id="instagram"></div>
+                        <div class="icon3" id="tiktok"></div>
+                        <div class="icon4" id="twitter"></div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section class="pasttripgalla">
+        <div class="hesd-ev">
+            <h3>
+                our recent events
+            </h3>
+        </div>
+        <div>
+            <div>
+                <div class="trip-con">
+                    <div class="tripimg">
+                        <img src="./IMG-20220924-WA0015.jpg" alt="">
+                    </div>
+                    <div class="trip-con-disc">
+                        <div class="trip-con-disc-top">
+                            <h1>
+                                Tour to Mt.Longonot
+                            </h1>
+                            <p>
+                                <span>
+                                    Ksh. 
+                                </span>
+                                2500
+                            </p>
+                        </div>
+                        <div class="trip-con-disc-btm">
+                            <h3>
+                                Date: 22 - 10 - 2022
+                            </h3>
+                            <h2>
+                                view pictorials
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <hr class="gallahr">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            Apex &copy;
+        </p>
+    </footer>
+    <script>
+        const loader = document.getElementById('preloader');
+
+        window.onload = function () {
+            loader.style.display = 'none';
+            document.body.classList.remove('no-scroll');
+            setTimeout(() => {
+                document.getElementById('fstsec-con').classList.add('instyle')
+            }, 300);
+        };
+
+    </script>
+
+</body>
+
+</html>
