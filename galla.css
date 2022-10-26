@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pasttripgalla {
+  height: 100vh;
+  background: rgb(27, 27, 27);
+  padding-top: 90px;
+}
+
+.hesd-ev {
+  width: 100%;
+  height: 60px;
+  background: #111111;
+  color: #008000;
+  display: flex;
+  align-items: center;
+}
+.hesd-ev h3 {
+  text-transform: capitalize;
+  padding-left: 30px;
+}
+
+.trip-con {
+  display: flex;
+  width: 96%;
+  padding: 2%;
+}
+
+.tripimg {
+  width: max(150px, 20%);
+  height: min(200px, 100%);
+}
+.tripimg img {
+  height: 100%;
+  width: 100%;
+}
+
+.gallahr {
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+  top: -5px;
+}
+
+.trip-con-disc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trip-con-disc-btm {
+  padding: 10px 0 0 20px;
+  color: rgb(97, 97, 97);
+}
+.trip-con-disc-btm h3 {
+  padding-bottom: 5px;
+}
+.trip-con-disc-btm div {
+  font-style: italic;
+  color: #008000;
+  padding-bottom: 15px;
+}
+
+.trip-con-disc-top {
+  padding: 10px 0 0 20px;
+  color: rgb(97, 97, 97);
+}
+.trip-con-disc-top h1 {
+  padding-bottom: 25px;
+}
+
+.extra a {
+  text-decoration: none;
+  font-style: italic;
+  color: #008000;
+  padding-bottom: 15px;
+}/*# sourceMappingURL=galla.css.map */
